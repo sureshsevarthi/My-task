@@ -1,38 +1,132 @@
-.App {
-  text-align: center;
+.column-setup-modal .modal-header {
+  border-bottom: none;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.column-setup-modal .modal-header h5 {
+  margin-bottom: 0.1rem;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.column-setup-modal .modal-header p {
+  color: #888b92;
+  font-size: 0.8rem;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.column-setup-modal .modal-header .close {
+  color: #888b92;
+  text-shadow: none;
+  padding: 0.3rem;
+  font-size: 2rem;
 }
-
-.App-link {
-  color: #61dafb;
+.column-setup-modal .modal-content {
+  background-color: #101116;
+  color: #dbdfe8;
+  border-radius: 0;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.column-setup-modal .modal-content .row {
+  background-color: #101116;
+}
+.column-setup-modal .modal-content .modal-body {
+  overflow-y: auto;
+}
+.column-setup-modal .modal-content .modal-body .row span {
+  color: #888b92;
+}
+.column-setup-modal .modal-content .modal-body .row .drag-list span {
+  font-size: 0.8rem;
+}
+.column-setup-modal .modal-content .modal-body .row .drag-list .drag-object {
+  padding: 0.2rem;
+  -webkit-transition: 0.1s;
+  transition: 0.1s;
+  background: #000000;
+}
+.column-setup-modal
+  .modal-content
+  .modal-body
+  .row
+  .drag-list
+  .drag-object
+  span {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  color: #000000;
+  padding-bottom: 0.5rem;
+}
+.column-setup-modal
+  .modal-content
+  .modal-body
+  .row
+  .drag-list
+  .drag-object.is-fixed,
+.column-setup-modal
+  .modal-content
+  .modal-body
+  .row
+  .drag-list
+  .drag-object.is-fixed:hover {
+  color: #888b92;
+  cursor: not-allowed;
+}
+.column-setup-modal
+  .modal-content
+  .modal-body
+  .row
+  .drag-list
+  .drag-object.is-fixed
+  span,
+.column-setup-modal
+  .modal-content
+  .modal-body
+  .row
+  .drag-list
+  .drag-object.is-fixed:hover
+  span {
+  color: #888b92;
+}
+.column-setup-modal
+  .modal-content
+  .modal-body
+  .row
+  .drag-list
+  .drag-object:hover,
+.column-setup-modal
+  .modal-content
+  .modal-body
+  .row
+  .drag-list
+  .drag-object.is-dragging {
+  background: #303238;
+}
+.column-setup-modal
+  .modal-content
+  .modal-body
+  .row
+  .drag-list
+  .drag-object:hover
+  span,
+.column-setup-modal
+  .modal-content
+  .modal-body
+  .row
+  .drag-list
+  .drag-object.is-dragging
+  span {
+  color: #ffffff;
+}
+.column-setup-modal .modal-content .modal-body .row .left-column {
+  border-right: 3px dashed #303238;
+}
+.column-setup-modal .modal-footer {
+  border-top: none;
+  -webkit-box-pack: start;
+  -ms-flex-pack: start;
+  justify-content: flex-start;
+}
+.column-setup-modal .modal-footer .btn {
+  min-width: 6rem;
+  padding: 0.3rem 0.75rem;
+}
+.column-setup-modal .modal-footer .btn-primary {
+  background-color: #4894c6;
+}
+.column-setup-modal .modal-footer .btn-primary:hover {
+  background-color: #3479a7;
 }
